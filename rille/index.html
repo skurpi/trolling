@@ -12,7 +12,7 @@
 			}
 					</style>
 					<script>
-			window.onload = function () {
+			bah = function () {
 				var iframeWin = document.getElementById("da-iframe").contentWindow,
 				button = document.getElementById("leButton"),
 				button.onclick = function () {
@@ -24,7 +24,7 @@
 	</head>
 
 	<body>
-        <button id="leButton">BORK</button>
+        <button id="leButton" onclick="bah()">BORK</button>
 		<iframe id="da-iframe" src="https://robertnyman.com/html5/postMessage/postMessageTarget.html"></iframe>
 	</body>
 </html>
