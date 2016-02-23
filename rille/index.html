@@ -10,21 +10,17 @@
 				margin: 20px auto;
 				border: 1px solid #000;
 			}
-					</style>
-					<script>
-			bah = function () {
+        </style>
+        <script>
+			function bah () {
 				var iframeWin = document.getElementById("da-iframe").contentWindow,
-				button = document.getElementById("leButton"),
-				button.onclick = function () {
-					iframeWin.postMessage("HEJHEJEHJEH", "http://robertnyman.com");
-					return false;
-				};
+                iframeWin.postMessage("HEJHEJEHJEH", "http://robertnyman.com");
 			};
 		</script>
 	</head>
 
 	<body>
-        <button id="leButton" onclick="bah()">BORK</button>
+        <button onclick="bah()">BORK</button>
 		<iframe id="da-iframe" src="https://robertnyman.com/html5/postMessage/postMessageTarget.html"></iframe>
 	</body>
 </html>
